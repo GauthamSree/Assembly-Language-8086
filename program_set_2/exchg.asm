@@ -1,4 +1,4 @@
-;; Exchange 10 bytes of data from 25000 to 36000
+;; Exchange 10 bytes of data from 25000H to 36000H
 
 .model small
 
@@ -20,7 +20,7 @@
     mov ES:[6001h], 27h
     mov ES:[6002h], 29h
 
-    ;; Mov from 25000 to 48000
+    ;; Mov from 25000H to 48000H
     mov ax, 4000h
     mov es, ax
     mov di, 8000h
@@ -29,7 +29,7 @@
     cld
     rep movsb
 
-    ;; Mov from 36000 to 25000
+    ;; Mov from 36000H to 25000H
     mov ax, 3000h
     mov ds, ax
     mov si, 6000h
@@ -42,7 +42,7 @@
     cld
     rep movsb
         
-    ;; Mov from 48000 to 36000
+    ;; Mov from 48000H to 36000H
     mov ax, 4000h
     mov ds, ax
     mov si, 8000h

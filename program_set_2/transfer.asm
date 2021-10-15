@@ -1,4 +1,4 @@
-;; Transfer 1 KB of data from 25000 to 36000
+;; Transfer 1 KB of data from 25000H to 36000H
 
 
 .model small
@@ -22,7 +22,7 @@
 HLT;
 
 
-;;; Exchange 10 bytes of data from 0E000H to 0B001H
+;;; Transfer 10 bytes of data from 0E000H to 0B001H
 ;.model small
 
 ;.code
